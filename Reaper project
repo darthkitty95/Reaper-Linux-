@@ -1,0 +1,40 @@
+wget https://github.com/Hax4us/TermuxBlack/raw/master/install.sh
+bash install.sh
+apt install pkg_name
+git clone https://github.com/pro-root/Fix-Termux.git
+cd Fix-Termux
+chmod +x Fix-Termux.sh
+bash Fix-Termux.sh
+git clone https://github.com/Z4nzu/hackingtool.git
+bash <(wget -qO- https://git.io/vAtmB)
+sudo su
+git clone https://github.com/LionSec/katoolin.git && cp katoolin/katoolin.py /usr/bin/katoolin
+chmod +x /usr/bin/katoolin
+sudo katoolin
+git clone https://github.com/Z4nzu/hackingtool.gitch
+cd hackingtool
+chmod -R 755 hackingtool  
+install.sh
+sudo bash install.sh
+sudo hackingtool combined with git clone https://github.com/Z4nzu/hackingtool.git
+chmod -R 755 hackingtool
+cd hackingtool
+sudo bash install.sh
+sudo hackingtool
+deb http://mirrors.163.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse
+import os
+import subprocess
+def run_termux_with_tor():
+    # Check if Tor service is running
+    tor_process = subprocess.Popen('pgrep -f "tor"', shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    tor_process.wait()
+    if tor_process.returncode != 0:
+        # Start Tor service if not already running
+        os.system('tor')
+
