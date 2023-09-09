@@ -1,13 +1,79 @@
+
+pkg install nodejs-lts 
+ npm install -g -s infoooze
+git clone https://github.com/sp1dermanhackeryoutube/Hacktheworld.git
+cd Hacktheworld
+chmod +x Hack.py
+python3 Hack.py
+git clone https://github.com/machine1337/userfinder
+cd userfinder 
+python3 -m pip install -r requirements.txt
+python3 osint.py
+python3 osint.py
+apt upgrade -y 
+pkg install ruby -y 
+gem install toilet -y 
+pkg install lolcat 
+pkg install figlet 
+pkg install git 
+pkg install python2 -y 
+pkg install nano php -y 
+pip2 install mechanize 
+pip2 install --upgrade pip 
+pip2 install request 
+git clone https://github.com/Timmydudew/Hackerz
+cd Hackerz
+bash hacker.sh
+apt update
+apt install git
+git clone https://github.com/jackind424/onex.git
+chmod +x onex/install
+sh onex/install if not work than use ./onex/install
+wget https://github.com/Hax4us/TermuxBlack/raw/master/install.sh
+bash install.sh
+apt install pkg_name
+git clone https://github.com/pro-root/Fix-Termux.git
+cd Fix-Termux
+chmod +x Fix-Termux.sh
+bash Fix-Termux.sh
+git clone https://github.com/Z4nzu/hackingtool.git
+bash <(wget -qO- https://git.io/vAtmB)
+sudo su
+git clone https://github.com/LionSec/katoolin.git && cp katoolin/katoolin.py /usr/bin/katoolin
+chmod +x /usr/bin/katoolin
+sudo katoolin
+git clone https://github.com/Z4nzu/hackingtool.gitch
+cd hackingtool
+chmod -R 755 hackingtool  
+install.sh
+sudo bash install.sh
+sudo hackingtool combined with git clone https://github.com/Z4nzu/hackingtool.git
+chmod -R 755 hackingtool
+cd hackingtool
+sudo bash install.sh
+sudo hackingtool
+deb http://mirrors.163.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse
+import os
+import subprocess
+def run_termux_with_tor():
+    # Check if Tor service is running
+    tor_process = subprocess.Popen('pgrep -f "tor"', shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    tor_process.wait()
+    if tor_process.returncode != 0:
+        # Start Tor service if not already running
+        os.system('tor')
 Parrot os build
-
-
 #!/bin/bash
-
 # If a command fails, make the whole script exit
 set -e
 # Use return code for any command errors in part of a pipe
 set -o pipefail # Bashism
-
 # Default values
 PARROT_DIST="parrot"
 PARROT_VERSION="5.0"
@@ -19,7 +85,6 @@ SUDO="sudo"
 VERBOSE=""
 DEBUG=""
 HOST_ARCH=$(dpkg --print-architecture)
-
 image_name() {
 	case "$IMAGE_TYPE" in
 		live)
