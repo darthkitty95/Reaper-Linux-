@@ -1,4 +1,28 @@
-
+import os
+import subprocess
+# Clone the Sn3rpos operating system repository
+subprocess.run(["git", "clone", "https://sourceforge.net/p/sn3rpos/code/ci/master/tree/"])
+# Clone the Cyborghawk Linux repository
+subprocess.run(["git", "clone", "https://sourceforge.net/projects/cyborghawk1/"])
+# Clone the Parrot OS repository
+subprocess.run(["git", "clone", "https://parrotsec.org/docs/mirrors/mirrors-list/"])
+# Clone the Kali Linux 2023 repository
+subprocess.run(["git", "clone", "https://www.kali.org/docs/community/kali-linux-mirrors/"])
+subprocess.run(["git", "clone", "https://blackarch.org/downloads.html"])
+# Merge the repositories
+# Merge the Sn3rpos operating system with Cyborghawk Linux
+os.system("cp -r cyborghawk1/* sn3rpos/")
+# Merge the Sn3rpos operating system with Parrot OS
+os.system("cp -r parrot_os_repository/* sn3rpos/")
+# Merge the Sn3rpos operating system with Kali Linux 2023
+os.system("cp -r kali_linux_2023_repository/* sn3rpos/")
+# Merge the Sn3rpos operating system with BlackArch Linux
+os.system("cp -r blackarch_linux_repository/* sn3rpos/")
+# Recompile the operating system
+os.chdir("sn3rpos/")
+os.system("make")
+# Verify the compiled operating system
+os.system("make test")
 pkg install nodejs-lts 
  npm install -g -s infoooze
 git clone https://github.com/sp1dermanhackeryoutube/Hacktheworld.git
